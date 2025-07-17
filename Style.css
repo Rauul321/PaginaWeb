@@ -137,6 +137,38 @@ aside {
     background-color: var(--color-borde);
 }
 
+.graf-card {
+  position: relative;
+  background-color: #0f172a; /* Fondo oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 2rem;
+  font-size: 1.8rem;
+  max-width: 400px;
+  color: #cbd5e1; /* Texto gris claro */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 20px auto; /* Centrar si está suelto */
+}
+
+.graf-card-text {
+  z-index: 1;
+  position: relative;
+}
+
+.graf-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.graf-wave path {
+  fill: url(#grad); /* Gradiente del fondo */
+  stroke: #7fff00; /* Verde neón */
+  stroke-width: 2;
+}
+
 .index-tipos {
     max-width: 900px;
     margin: 0 auto;
@@ -179,7 +211,6 @@ aside {
     line-height: 1.5;
 }
 
-
 /* Estilo de los artículos */
 article {
     margin-bottom: 20px;
@@ -212,6 +243,22 @@ article {
 .btn-conocenos:hover {
     background-color: #007b6d; /* Verde un poco más claro al hacer hover */
     transform: translateY(-2px);
+}
+
+.titulo-mapa {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* separa el icono del texto */
+  margin-bottom: 10px;
+}
+
+.titulo-mapa i {
+  color: #d00; /* cambia el color del icono si quieres */
+  font-size: 1.5rem; /* tamaño del icono */
+}
+
+.titulo-mapa h2 {
+  margin: 0; /* quita márgenes para que quede centrado */
 }
 
 /* Footer */
