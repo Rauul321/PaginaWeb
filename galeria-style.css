@@ -146,8 +146,8 @@ article {
 footer {
     text-align: center;
     padding: 20px;
-    background: #000000;
-    color: #fff;
+    background: var(--color-secundario);
+    color: white;
     margin-top: 20px;
 }
 
