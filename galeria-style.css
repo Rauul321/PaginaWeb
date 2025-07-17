@@ -1,0 +1,196 @@
+@import url("colors.css");
+
+/* Reset básico para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño general del body */
+/** {
+    font-family: 'Mi fuente', serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/*
+body {
+    font-family: 'Mi fuente', serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    text-align: justify;
+    color: #333;
+    font-family: 'Mi fuente', serif;
+}*/
+
+h1 {
+    font-family: 'Mi fuente', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+
+#slogan {
+    font-family: 'Mi fuente', serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+/* Estilo del header */
+header {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Reset básico para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño general del body */
+body {
+    font-family: 'Mi fuente', serif;
+    line-height: 1.6;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+#slogan {
+    font-family: 'Mi fuente', serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--color-secundario);
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Estilo del header */
+header {
+    background: var(--color-fondo);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación horizontal */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: var(--color-secundario);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: var(--color-acento);
+}
+
+/* Contenedor principal (usa flexbox para distribuir contenido y aside) */
+main {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #e4e4e4;
+}
+
+/* Estilo de los artículos */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+
+
+/* Layout general: Main + Aside uno al lado del otro */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.galeria-instagram {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    /* altura automática, se adapta al contenido */
+}
+
+.galeria-instagram img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Hace que cada imagen sea cuadrada */
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria-instagram img:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Responsive: menos columnas en pantallas pequeñas */
+@media (max-width: 700px) {
+    .galeria-instagram {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .galeria-instagram {
+        grid-template-columns: 1fr;
+    }
+}
+
+@font-face {
+    font-family: 'Mi fuente';
+    src: url('fonts/TechnaSans-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
