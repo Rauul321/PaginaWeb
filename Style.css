@@ -332,13 +332,12 @@ input[type="text"]:focus, input[type="text"]:active {
     background: transparent;
 }
 
-#contacto .container {
-    width:min(1000px, 100%);
+/*#contacto .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}*/
 
 .forms {
     background-color: var(--color-secundario);
@@ -346,6 +345,7 @@ input[type="text"]:focus, input[type="text"]:active {
     width: 50%;
     height: 600px;
     color: white;
+    flex: 1;
 }
 
 .info {
@@ -353,6 +353,7 @@ input[type="text"]:focus, input[type="text"]:active {
     height: 100%;
     padding: 4%;
     background-color: var(--color-articulo); /* Fondo blanco para la sección de información */
+    flex: 1;
 }
 
 .info .body {
@@ -385,7 +386,6 @@ button:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
     transition-duration: 1s; /* Duración del efecto de zoom */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
-
 }
 
 .body ul {
@@ -411,9 +411,10 @@ button:hover {
     padding: 1%;
 }
 
+
 /* Formulario y contacto responsive */
 @media (max-width: 768px) {
-    #contacto .container {
+    .container {
         flex-direction: column; /* Apila verticalmente */
         height: auto; /* Altura automática */
     }
@@ -426,10 +427,12 @@ button:hover {
 
     .forms {
         padding: 5%; /* Más espacio interno para móviles */
+        width: 100%;
     }
 
     .info {
         padding: 5%;
+        width: 100%;
     }
 
     button {
