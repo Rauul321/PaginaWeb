@@ -5,7 +5,8 @@
     --color-acento: #00C853;     /* Verde más vivo para botones/hover */
     --color-fondo: #F5FDF7;      /* Fondo claro suave */
     --color-texto: #1C2C33;      /* Texto oscuro legible */
-  
+    --color-texto-secundario: #00313A; /* Texto secundario gris oscuro */
+    --color-articulo: #FFFFFF;
     /* 🌟 Colores adicionales */
     --color-fondo-oscuro: #001F25; /* Fondo oscuro alternativo */
     --color-borde: #D0E8DC;        /* Bordes suaves */

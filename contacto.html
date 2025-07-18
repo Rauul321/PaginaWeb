@@ -8,12 +8,15 @@
     <!-- Enlace a CSS externo -->
     <link rel="stylesheet" href="Style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Favicon opcional -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Meta SEO básica -->
-    <meta name="description" content="Breve descripción de tu página web.">
-    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Empresa extremeña líder en asesoramiento, comercialización e ingeniería energética.">
+    <meta name="author" content="Paloma Suárez Moreno">
+    <meta name="author" content="Raúl Rosado Refolio">
+    <meta name="keywords" content="energía, asesoramiento energético, sostenibilidad, eficiencia energética, energía renovable">
 
 </head>
 <body>
@@ -33,14 +36,21 @@
 </nav>
 
 
+
+
 <!-- Main: Contacto -->
 
 
-<main class="main" id="contacto">
+    <div>
+        <br>
+        <button id="modo-oscuro" class="modo-oscuro">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
     <div class="container">
         <div class="forms">
             <h2 style="margin-bottom: 5%;">Contáctanos</h2>
-            <form>
+            <form action="https://formspree.io/f/xeozopoq" method="POST">
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
                 <input type="email" id="email" name="email" placeholder="Email"><br>
                 <input type="text" id="telefono" name="telefono" placeholder="Teléfono"><br>
@@ -57,19 +67,19 @@
                 <ul>
                     <li>
                         <div class="list">
-                            <img src="Icons/sobre.png" alt="Sobre" width="20" height="20">
-                            <div class="text"><span>Email: </span>info@energiaextremena.com</div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="text"><span> Email: </span>info@energiaextremena.com</div>
                         </div>
                     </li>
                     <li>
                         <div class="list">
-                            <img src="Icons/llamada-telefonica.png" alt="Teléfono" width="20" height="20">
-                            <div class="text"><span>Teléfono: </span>+34 638 88 48 40</div>
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="text"><span> Teléfono: </span>+34 638 88 48 40</div>
                         </div>
                     </li>
                     <li>
                         <div class="list">
-                            <img src="Icons/marcador.png" alt="Ubicación" width="20" height="20">
+                            <i class="fa-solid fa-location-dot"></i>
                             <div class="text"><span>Dirección: </span>C/ San Vicente, 7, Alburquerque, 06510, Badajoz</div>
                         </div>
                     </li>
@@ -78,12 +88,14 @@
         </div>
     </div>
 
-</main>
 
 <!-- Footer -->
 <footer class="footer">
     <p>&copy; 2025 ENERGÍA EXTREMEÑA. Todos los derechos reservados.</p>
+    <small>&copy; Sitio web desarrollado por Paloma Suárez Moreno y Raúl Rosado Refolio</small>
 </footer>
 
+<script src="modoOscuro.js"></script>
 </body>
+
 </html>

@@ -21,7 +21,7 @@ body {
     font-size: 1.5em;
     text-align: center;
     margin: 20px 0;
-    color: var(--color-secundario);
+    color: var(--color-texto-secundario);
     font-style: italic;
     font-weight: bold;
 }
@@ -32,6 +32,10 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header img {
+    filter: drop-shadow(0 0 6px white);
 }
 
 /* Redes sociales verticales fijas */
@@ -128,13 +132,13 @@ nav ul li a:hover {
 main {
     flex: 3;
     padding: 20px;
-    background-color: white;
+    background-color: var(--color-articulo) /* Fondo blanco */;
 }
 
 aside {
     flex: 1;
     padding: 20px;
-    background-color: var(--color-borde);
+    background-color: var(--color-borde); /* Azul oscuro del logo */
 }
 
 .container {
@@ -148,7 +152,7 @@ aside {
   position: relative;
   width: 100%;
   height: 200px;
-  background: #ffffff; /* Fondo blanco */
+  background: var(--color-fondo); /* Fondo blanco */
   overflow: hidden;
 
   /* Centrar el texto dentro */
@@ -159,7 +163,7 @@ aside {
 
 .graf-text {
   text-align: center;
-  color: #334155; /* Gris oscuro */
+  color: var(--color-texto); /* Gris oscuro */
   font-size: 1.8rem;
   font-weight: 600;
   z-index: 2;
@@ -203,7 +207,7 @@ aside {
 }
 
 .index-tipos-objetos {
-    background-color: white;
+    background-color: var(--color-fondo);
     border: 1px solid var(--color-borde);
     border-radius: 10px;
     padding: 20px;
@@ -226,7 +230,7 @@ aside {
 .index-tipos-objetos h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: var(--color-secundario);
+    color: var(--color-texto-secundario);
 }
 
 .index-tipos-objetos p {
@@ -239,7 +243,7 @@ aside {
 article {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: white;
+    background-color: var(--color-fondo) /* Fondo blanco */;
     border: 1px solid var(--color-borde);
 }
 
@@ -249,6 +253,16 @@ article {
     max-width: 1200px;
     margin: 20px auto;
     gap: 20px;
+
+}
+
+main #contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-fondo); /* Fondo blanco */
 }
 
 .form-grid {
@@ -256,7 +270,7 @@ article {
     grid-template-columns: 150px 1fr;
     gap: 10px;
     max-width: 400px;
-    background-color: 1px solid var(--color-borde);
+    background-color: 1px solid var(--color-fondo) /* Fondo blanco */;
 }
 .form-grid label {
     text-align: right;
@@ -266,7 +280,7 @@ article {
     grid-column: 2;
     justify-self: start;
     display: inline-block;
-    background-color: #014f4a; /* Verde oscuro como el menú */
+    background-color: var(--color-fondo); /* Verde oscuro como el menú */
     color: #ffffff; /* Texto blanco */
     text-decoration: none;
     padding: 12px 24px;
@@ -338,7 +352,7 @@ input[type="text"]:focus, input[type="text"]:active {
     width: 50%;
     height: 100%;
     padding: 4%;
-    background-color: var(--color-fondo);
+    background-color: var(--color-articulo); /* Fondo blanco para la sección de información */
 }
 
 .info .body {
@@ -358,9 +372,20 @@ button {
     color: #ffffff; /* Texto blanco */
     font-size: 16px;
     border: 1px solid var(--color-borde);
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 25px; /* Bordes redondeados */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Mi fuente', serif;;
+}
+
+button:hover {
+    background-color: var(--color-borde) /* Verde más claro al hacer hover */;
+    color: var(--color-secundario); /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transition-duration: 1s; /* Duración del efecto de zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+
 }
 
 .body ul {
@@ -420,7 +445,7 @@ button {
 }
 
 .titulo-mapa i {
-  color: #d00; /* cambia el color del icono si quieres */
+  color: var(--color-texto); /* cambia el color del icono si quieres */
   font-size: 1.5rem; /* tamaño del icono */
 }
 
@@ -442,6 +467,57 @@ footer {
     src: url('fonts/TechnaSans-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* separa el icono del texto */
+    margin-bottom: 10px;
+}
+
+/* Modo oscuro */
+.modo-oscuro {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.modo-oscuro:hover {
+    background-color: var(--color-secundario);
+    color: white;
+    transform: scale(1.05);
+}
+
+:root {
+    /* Colores principales extraídos del logo */
+    --color-primario: #009739;   /* Verde principal del logo */
+    --color-secundario: #00313A; /* Azul oscuro del logo */
+    --color-acento: #00C853;     /* Verde más vivo para botones/hover */
+    --color-fondo: #F5FDF7;      /* Fondo claro suave */
+    --color-texto: #1C2C33;      /* Texto oscuro legible */
+    --color-texto-secundario: #00313A; /* Texto secundario gris oscuro */
+    --color-articulo: #FFFFFF;   /* Fondo blanco para artículos */
+    --color-borde: #D0E8DC;      /* Bordes suaves */
+    --color-alerta: #FFC107;     /* Amarillo para avisos o acentos */
+}
+
+.dark-mode {
+    /* Colores para el modo oscuro */
+    --color-fondo: #001F25; /* Fondo oscuro */
+    --color-texto: #F5FDF7; /* Texto claro */
+    --color-texto-secundario: #D0E8DC; /* Texto secundario gris claro */
+    --color-primario: #00C853; /* Verde más vivo para botones/hover */
+    --color-secundario: #00313A; /* Azul oscuro del logo */
+    --color-acento: #009739; /* Verde principal del logo */
+    --color-borde: #00313A; /* Bordes suaves */
+    --color-articulo: #032a30;
+    --color-alerta: #FFC107; /* Amarillo para avisos o acentos */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+
 }
 
 
