@@ -29,7 +29,7 @@ h1 {
     font-size: 2.5em;
     text-align: center;
     margin: 20px 0;
-    color: #333;
+    color: var(--color-texto);
 }
 
 
@@ -132,6 +132,41 @@ article {
     border: 1px solid #ddd;
 }
 
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Verde oscuro como el menú */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px;
+    border: 1px solid var(--color-borde);
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Mi fuente', serif;;
+}
+
+button:hover {
+    background-color: var(--color-borde) /* Verde más claro al hacer hover */;
+    color: var(--color-secundario); /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    transition-duration: 1s; /* Duración del efecto de zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.modo-oscuro {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+.modo-oscuro:hover {
+    background-color: var(--color-secundario);
+    color: white;
+    transform: scale(1.05);
+}
+
 
 
 /* Layout general: Main + Aside uno al lado del otro */
@@ -193,4 +228,36 @@ footer {
     src: url('fonts/TechnaSans-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+
+:root {
+    /* Colores principales extraídos del logo */
+    --color-primario: #009739;   /* Verde principal del logo */
+    --color-secundario: #00313A; /* Azul oscuro del logo */
+    --color-acento: #00C853;     /* Verde más vivo para botones/hover */
+    --color-fondo: #F5FDF7;      /* Fondo claro suave */
+    --color-texto: #1C2C33;      /* Texto oscuro legible */
+    --color-texto-secundario: #00313A; /* Texto secundario gris oscuro */
+    --color-articulo: #FFFFFF;   /* Fondo blanco para artículos */
+    --color-borde: #D0E8DC;      /* Bordes suaves */
+    --color-alerta: #FFC107;     /* Amarillo para avisos o acentos */
+}
+
+.dark-mode {
+    /* Colores para el modo oscuro */
+    --color-fondo: #001F25; /* Fondo oscuro */
+    --color-texto: #F5FDF7; /* Texto claro */
+    --color-texto-secundario: #D0E8DC; /* Texto secundario gris claro */
+    --color-primario: #00C853; /* Verde más vivo para botones/hover */
+    --color-secundario: #00313A; /* Azul oscuro del logo */
+    --color-acento: #009739; /* Verde principal del logo */
+    --color-borde: #D0E8DC; /* Bordes suaves */
+    --color-aside: #00313A;
+    --color-articulo: #032a30;
+    --color-alerta: #FFC107; /* Amarillo para avisos o acentos */
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+
 }
