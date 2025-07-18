@@ -11,5 +11,6 @@
     --color-fondo-oscuro: #001F25; /* Fondo oscuro alternativo */
     --color-borde: #D0E8DC;        /* Bordes suaves */
     --color-alerta: #FFC107;       /* Amarillo para avisos o acentos */
+    --color-aside: #D0E8DC;
   }
   
