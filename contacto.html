@@ -27,7 +27,6 @@
 <nav>
     <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
         <li><a href="galeria.html">Clientes</a></li>
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
@@ -35,14 +34,84 @@
 
 
 <!-- Main: Contacto -->
-<main class="main">
-    <section class="contacto">
-        <h1>Contáctanos</h1>
 
-        <p>Rellena el siguiente formulario para ponerte en contacto con nosotros. Te responderemos lo antes posible.</p>
 
+<main class="main" id="contacto">
+    <div class="container">
+        <div class="forms">
+            <h2 style="margin-bottom: 5%;">Contáctanos</h2>
+            <form>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <input type="text" id="telefono" name="telefono" placeholder="Teléfono"><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribenos..." rows="5"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="info">
+            <div class="header">
+                <h1 style="margin-bottom: 3%;">Información de contacto</h1>
+                <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+            </div>
+            <div class="body">
+                <ul>
+                    <li>
+                        <div class="list">
+                            <img src="Icons/sobre.png" alt="Sobre" width="20" height="20">
+                            <div class="text"><span>Email:</span>info@energiaextremena.com</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list">
+                            <img src="Icons/llamada-telefonica.png" alt="Teléfono" width="20" height="20">
+                            <div class="text"><span>Teléfono:</span>+34 638 88 48 40</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<section class="contacto">
+        <h1>Contáctanos</h1> -->
+
+        <!--<p>Rellena el siguiente formulario para ponerte en contacto con nosotros. Te responderemos lo antes posible.</p> -->
+        <!--
         <form class="formulario-contacto" action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="mensaje">Mensaje:</label></td>
+                    <td><textarea type="text" id="mensaje" name="mensaje"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Enviar</button></td>
+                </tr>
+            </table>
+            -->
 
+        <!--
+        <form class="form-grid">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <div></div>
+            <button type="submit">Enviar</button>
+        </form>
+        -->
+            <!--
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -66,24 +135,26 @@
             <button type="submit">Enviar Mensaje</button>
 
         </form>
+        -->
 
-        <div class="extra-contact">
+        <!--<div class="extra-contact">
             <h2>También puedes contactarnos a través de:</h2>
-            <!-- Correo electrónico -->
             <div class="contact-method">
                 <i class="fi fi-rr-envelope"></i>
                 <p><img src="Icons/sobre.png" alt="Sobre" width="20" height="20"> <a href="mailto:info@energiaextremena.com"> info@energiaextremena.com</a></p>
             </div>
 
-            <!-- Teléfono -->
+
             <div class="contact-method">
                 <i class="fas fa-phone"></i>
                 <p><img src="Icons/llamada-telefonica.png" alt="Teléfono" width="20" height="20"> <a href="tel:+34638884840">+34 638 88 48 40</a></p>
             </div>
-        </div>
+        </div> -->
 
 
-    </section>
+
+    <!--</section>-->
+
 </main>
 
 <!-- Footer -->

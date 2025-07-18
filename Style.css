@@ -251,6 +251,37 @@ article {
     gap: 20px;
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    max-width: 400px;
+    background-color: 1px solid var(--color-borde);
+}
+.form-grid label {
+    text-align: right;
+    padding-right: 10px;
+}
+.form-grid button {
+    grid-column: 2;
+    justify-self: start;
+    display: inline-block;
+    background-color: #014f4a; /* Verde oscuro como el menú */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 17px;
+    margin-top: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-grid button:hover {
+    background-color: #007b6d; /* Verde un poco más claro al hacer hover */
+    transform: translateY(-2px);
+}
+
 .btn-conocenos {
     display: inline-block;
     background-color: #014f4a; /* Verde oscuro como el menú */
@@ -267,6 +298,94 @@ article {
 .btn-conocenos:hover {
     background-color: #007b6d; /* Verde un poco más claro al hacer hover */
     transform: translateY(-2px);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+    background-color: var(--color-secundario);
+    border-bottom: 1px solid var(--color-borde);
+    color: white;
+}
+
+input[type="text"]:focus, input[type="text"]:active {
+    background: transparent;
+}
+
+#contacto .container {
+    width:min(1000px, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.forms {
+    background-color: var(--color-secundario);
+    padding: 3%;
+    width: 50%;
+    height: 600px;
+    color: white;
+}
+
+.info {
+    width: 50%;
+    height: 100%;
+    padding: 4%;
+    background-color: var(--color-fondo);
+}
+
+.info .body {
+    height: 70%;
+    width: 100%;
+}
+
+.info img {
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* Verde oscuro como el menú */
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.body ul {
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.body ul li {
+    margin: 4% 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list img {
+    margin-right: 5%;
+    background-color: transparent;
+    padding: 1%;
+    border-radius: 100%;
+    border: 1px solid black;
 }
 
 .titulo-mapa {
