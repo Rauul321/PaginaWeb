@@ -434,10 +434,6 @@ button:hover {
         padding: 5%;
         width: 100%;
     }
-
-    button {
-        width: 100%; /* Botón ocupa el ancho completo */
-    }
 }
 
 .titulo-mapa {
