@@ -352,7 +352,7 @@ input[type="text"]:focus, input[type="text"]:active {
     width: 50%;
     height: 100%;
     padding: 4%;
-    background-color: var(--color-articulo); /* Fondo blanco para la sección de información */
+    background-color: var(--color-aside); /* Fondo blanco para la sección de información */
     flex: 1;
 }
 
@@ -511,7 +511,7 @@ footer {
     --color-secundario: #00313A; /* Azul oscuro del logo */
     --color-acento: #009739; /* Verde principal del logo */
     --color-borde: #D0E8DC; /* Bordes suaves */
-    --color-aside: #00313A;
+    --color-aside: #02471c;
     --color-articulo: #032a30;
     --color-alerta: #FFC107; /* Amarillo para avisos o acentos */
     background-color: var(--color-fondo);
