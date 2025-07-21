@@ -234,6 +234,36 @@ footer {
     .galeria-instagram {
         grid-template-columns: 1fr;
     }
+
+
+}
+
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color-texto) /* Gris oscuro */;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Oculto en móvil inicialmente */
+        flex-direction: column;
+        background-color: var(--color-secundario) /* Azul oscuro del logo */;
+        position: absolute;
+        top: 50px; /* debajo del navbar */
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex; /* Mostrar al hacer clic */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar hamburguesa */
+    }
 }
 
 @font-face {
